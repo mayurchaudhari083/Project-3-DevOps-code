@@ -1,18 +1,15 @@
 variable "role_name" {
-  description = "IAM role name"
+  description = "Name of the IAM Role"
   type        = string
 }
 
-variable "service_principals" {
-  description = "AWS service principals that can assume this role"
-  type        = list(string)
+variable "assume_role_policy" {
+  description = "The policy that grants an entity permission to assume the role"
+  type        = string
 }
 
-variable "permissions" {
-  description = "List of action-resource mappings for inline policies"
-  type = list(object({
-    name      = string
-    actions   = list(string)
-    resources = list(string)
-  }))
+variable "tags" {
+  description = "Tags to apply to the role"
+  type        = map(string)
+  default     = {}
 }

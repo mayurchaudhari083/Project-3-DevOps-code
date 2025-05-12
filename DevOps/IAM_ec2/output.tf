@@ -1,4 +1,7 @@
-output "instance_profile_name" {
-  description = "The name of the IAM instance profile"
-  value       = module.shared_iam.instance_profile_name
+output "iam_role_name" {
+  value = module.iam_role.role_name
+}
+
+output "iam_role_arn" {
+  value = module.iam_role.role_arn
 }

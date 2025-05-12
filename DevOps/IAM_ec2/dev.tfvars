@@ -1,15 +1,7 @@
-role_name          = "Project-3-DevOps-code"
-service_principals = ["ec2.amazonaws.com"]
+role_name = "Punam-fqts-proj3-iam-role"
 
-permissions = [
-  {
-    name      = "DescribeEC2"
-    actions   = ["ec2:DescribeInstances"]
-    resources = ["*"]
-  },
-  {
-    name      = "ReadS3"
-    actions   = ["s3:GetObject"]
-    resources = ["arn:aws:s3:::example-bucket/*"]
-  }
-]
+tags = {
+  Environment = "dev"
+  Project     = "proj3"
+}
+iam_role_name = "Punam-fqts-proj3-iam-role"
