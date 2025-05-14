@@ -5,6 +5,6 @@ key_name               = "Mayur_Key_Pair"
 project_name           = "project-3"
 env                    = "dev"
 unique_id              = "test-server"
-iam_instance_profile   = "punam-fqts-proj3-iam-role-prfile"
-subnet_id              = "subnet-0abc12345de678fgh"
+iam_instance_profile   = "Punam-fqts-proj3-iam-role-profile"
+subnet_id              = "subnet-0034c59563dfabecd"
 

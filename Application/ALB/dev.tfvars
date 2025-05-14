@@ -1,9 +1,9 @@
 name                       = "my-alb"
 internal                   = false
-security_groups            = ["sg-123456"]
-subnets                    = ["subnet-080885b8859f2e9b5"]
+security_groups            = ["sg-0a2b79b94d4b38288"]
+subnets                    = ["subnet-0034c59563dfabecd", "subnet-0006ead7048785ec8"]
 vpc_id                     = "vpc-09f6fc08d2689b3f0"
-target_group_name          = "my-tg"
+target_group_name          = "fqts-target-group"
 target_group_port          = 80
 target_group_protocol      = "HTTP"
 enable_deletion_protection = false

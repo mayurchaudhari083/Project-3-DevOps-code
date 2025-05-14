@@ -5,7 +5,9 @@ variable "vpc_security_group_ids" {
 }
 variable "key_name" {}
 variable "subnet_id" {}
-variable "iam_instance_profile" {}
+variable "instance_profile_name" {
+  type = string
+}
 variable "name" {}
 variable "project_name" {}
 variable "env" {}

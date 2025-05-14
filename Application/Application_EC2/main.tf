@@ -7,6 +7,6 @@ module "Application_EC2" {
   name                   = "${var.project_name}-${var.unique_id}"
   project_name           = var.project_name
   env                    = var.env
-  iam_instance_profile   = var.iam_instance_profile
+  instance_profile_name  = var.iam_instance_profile
   subnet_id              = var.subnet_id
 }
