@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket       = "punam-devops-bucket-fqts"
+    bucket       = "devops-bucket-punam-fqts"
     key          = "env/dev/terraform.tfstate"
     region       = "us-east-1"
     encrypt      = true

@@ -86,6 +86,8 @@ data "aws_iam_policy_document" "extended_ec2_policy" {
         "elasticloadbalancing.amazonaws.com",
         "spot.amazonaws.com",
         "spotfleet.amazonaws.com",
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeTargetGroups",
         "transitgateway.amazonaws.com"
       ]
     }

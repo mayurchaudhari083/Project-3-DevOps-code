@@ -9,8 +9,7 @@ module "jenkins_instance" {
   name                   = var.name
   project_name           = var.project_name
   env                    = var.env
-
-  user_data = <<-EOF
+  user_data              = <<-EOF
   #!/bin/bash
   sudo yum update -y
 
