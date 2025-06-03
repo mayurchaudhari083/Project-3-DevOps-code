@@ -1,7 +1,7 @@
 name                       = "fqts-alb"
 internal                   = false
 security_groups            = ["sg-0640df8db79727a94"]
-subnets                    = ["subnet-0240a86a8ee3c206d"]
+subnets                    = ["subnet-0240a86a8ee3c206d", "subnet-0422e709e4abb0569"]
 vpc_id                     = "vpc-0b5257a147240a7c2"
 target_group_name          = "punam-fqts-target-group"
 target_group_port          = 80
