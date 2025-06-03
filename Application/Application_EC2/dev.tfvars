@@ -6,5 +6,5 @@ project_name           = "project-3"
 env                    = "dev"
 unique_id              = "test-server"
 iam_instance_profile   = "Punam-fqts-proj3-iam-role-profile"
-subnet_id              = "subnet-0034c59563dfabecd"
+subnet_id              = "subnet-0240a86a8ee3c206d"
 
