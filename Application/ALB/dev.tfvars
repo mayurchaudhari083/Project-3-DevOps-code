@@ -16,7 +16,7 @@ health_check_healthy_threshold   = 2
 health_check_unhealthy_threshold = 2
 health_check_matcher             = "200-399"
 
-application_instance = "i-086c62bd93227044a" # <-- replace with actual EC2 instance ID
+#application_instance = "i-086c62bd93227044a" # <-- replace with actual EC2 instance ID
 
 tags = {
   Environment = "dev"
