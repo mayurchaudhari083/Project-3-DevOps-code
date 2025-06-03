@@ -1,4 +1,4 @@
-ami                    = "ami-0953476d60561c955"
+ami                    = "ami-0554aa6767e249943"
 instance_type          = "t2.micro"
 vpc_security_group_ids = ["sg-0640df8db79727a94"]
 key_name               = "Key-Pair-Punam"
