@@ -1,7 +1,7 @@
-ami                    = "ami-05b10e08d247fb927"
+ami                    = "ami-0953476d60561c955"
 instance_type          = "t2.micro"
-vpc_security_group_ids = ["sg-0a2b79b94d4b38288"]
-key_name               = "Mayur_Key_Pair"
+vpc_security_group_ids = ["sg-0f73088b2021a4e5d"]
+key_name               = "Key-Pair-Punam"
 project_name           = "project-3"
 env                    = "dev"
 unique_id              = "test-server"

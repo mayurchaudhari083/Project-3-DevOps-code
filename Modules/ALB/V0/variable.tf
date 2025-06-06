@@ -17,3 +17,11 @@ variable "health_check_timeout" { type = number }
 variable "health_check_healthy_threshold" { type = number }
 variable "health_check_unhealthy_threshold" { type = number }
 variable "health_check_matcher" {}
+variable "application_instance" {
+  description = "ID of the EC2 instance to attach to the target group"
+  type        = string
+}
+
+
+
+

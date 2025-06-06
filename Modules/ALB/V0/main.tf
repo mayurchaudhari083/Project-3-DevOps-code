@@ -37,3 +37,10 @@ resource "aws_lb_listener" "this" {
     target_group_arn = aws_lb_target_group.this.arn
   }
 }
+
+# This is where the EC2 instance is attached
+resource "aws_lb_target_group_attachment" "app_tg_attachment" {
+  target_group_arn = aws_lb_target_group.this.arn
+  target_id        = var.application_instance
+  port             = 80
+}

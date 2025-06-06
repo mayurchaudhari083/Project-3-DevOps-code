@@ -5,7 +5,7 @@ module "terraform_instance" {
   vpc_security_group_ids = var.vpc_security_group_ids
   key_name               = var.key_name
   subnet_id              = var.subnet_id
-  instance_profile_name  = var.iam_instance_profile
+  iam_instance_profile   = var.iam_instance_profile
   name                   = var.name
   project_name           = var.project_name
   env                    = var.env
