@@ -33,16 +33,19 @@ variable "env" {
   type        = string
   default     = null
 }
-variable "unique_ids" {
-  description = "unique_id "
-  type        = list(any)
-  default     = []
+
+variable "company_name" {
+  description = "company_name "
+  type        = string
+  default     = "FQTS"
 }
 
 variable "user_data" {
-  description = "Startup script to run on instance"
+  description = "user_data "
   type        = string
+  default     = ""
 }
+
 variable "iam_instance_profile" {
   description = "IAM instance profile name to attach"
   type        = string
