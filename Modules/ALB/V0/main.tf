@@ -63,9 +63,9 @@ resource "aws_lb_listener_rule" "backend_rule" {
   }
 }
 
-# This is where the EC2 instance is attached
-resource "aws_lb_target_group_attachment" "app_tg_attachment" {
-  target_group_arn = aws_lb_target_group.this.arn
+# Attach EC2 to backend target group
+resource "aws_lb_target_group_attachment" "backend_attachment" {
+  target_group_arn = aws_lb_target_group.backend_tg.arn
   target_id        = var.application_instance
-  port             = 80
+  port             = 8080
 }
