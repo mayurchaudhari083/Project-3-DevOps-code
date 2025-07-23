@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        TF_WORKING_DIR = 'Project-3-DevOps-code/Application/ALB_ASG'
+        TF_WORKING_DIR = 'Application/ALB_ASG'
     }
     stages {
         stage('Checkout') {
