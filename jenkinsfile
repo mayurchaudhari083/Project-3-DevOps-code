@@ -1,22 +1,41 @@
 pipeline {
-  agent any
-
-  stages {
-    stage('Build') {
-      steps {
-        echo "Building ${env.BRANCH_NAME}"
-        // Add your build logic
-      }
+    agent any
+    environment {
+        TF_WORKING_DIR = 'Project-3-DevOps-code/Application/ALB_ASG'
     }
-    stage('Test') {
-      steps {
-        echo "Testing ${env.BRANCH_NAME}"
-      }
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/mayurchaudhari083/Project-3-DevOps-code.git'
+            }
+        }
+        stage('Terraform Init') {
+            steps {
+                dir("${TF_WORKING_DIR}") {
+                    sh 'terraform init'
+                }
+            }
+        }
+        stage('Terraform Validate') {
+            steps {
+                dir("${TF_WORKING_DIR}") {
+                    sh 'terraform validate'
+                }
+            }
+        }
+        stage('Terraform Plan') {
+            steps {
+                dir("${TF_WORKING_DIR}") {
+                    sh 'terraform plan -var-file="dev.tfvars"'
+                }
+            }
+        }
+        stage('Terraform Apply') {
+            steps {
+                dir("${TF_WORKING_DIR}") {
+                    sh 'terraform apply -auto-approve -var-file="dev.tfvars"'
+                }
+            }
+        }
     }
-    stage('Deploy') {
-      steps {
-        echo "Deploying ${env.BRANCH_NAME}"
-      }
-    }
-  }
 }
