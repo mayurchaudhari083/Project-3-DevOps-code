@@ -63,9 +63,9 @@ resource "aws_lb_listener_rule" "backend_rule" {
   }
 }
 
-# Attach EC2 to backend target group
-resource "aws_lb_target_group_attachment" "backend_attachment" {
-  target_group_arn = aws_lb_target_group.backend_tg.arn
-  target_id        = var.application_instance
-  port             = 8080
-}
+# # Attach EC2 to backend target group
+# resource "aws_lb_target_group_attachment" "backend_attachment" {
+#   target_group_arn = aws_lb_target_group.backend_tg.arn
+#   target_id        = var.application_instance
+#   port             = 8080
+# }

@@ -42,6 +42,6 @@ variable "alb_name" {
 variable "health_check_enabled" {
   type = bool
 }
-variable "application_instance" {
-  type = string
-}
+# variable "application_instance" {
+#   type = string
+# }
