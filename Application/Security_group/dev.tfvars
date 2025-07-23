@@ -13,7 +13,11 @@ sg_ingress = [
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
+<<<<<<< HEAD
     cidr_blocks = ["0.0.0.0/0"]
+=======
+    cidr_blocks = ["10.0.0.0/16"]
+>>>>>>> be0342becaaa3a6779377983fef992cc55f335af
   }
 ]
 

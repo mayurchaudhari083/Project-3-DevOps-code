@@ -20,6 +20,7 @@ module "alb" {
   health_check_healthy_threshold   = var.health_check_healthy_threshold
   health_check_unhealthy_threshold = var.health_check_unhealthy_threshold
   health_check_matcher             = var.health_check_matcher
+<<<<<<< HEAD
 
 }
 # This is where the EC2 instance is attached
@@ -27,4 +28,9 @@ resource "aws_lb_target_group_attachment" "app_tg_attachment" {
   target_group_arn = module.alb.target_group_arn
   target_id        = var.application_instance
   port             = 8080
+=======
+  # Pass EC2 instance ID here
+  application_instance = var.application_instance
+
+>>>>>>> be0342becaaa3a6779377983fef992cc55f335af
 }
